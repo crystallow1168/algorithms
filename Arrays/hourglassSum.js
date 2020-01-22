@@ -1,16 +1,5 @@
 // https://www.hackerrank.com/challenges/2d-array/problem
 
-const input = [
-  [1, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 0, 0],
-  [1, 1, 1, 0, 0, 0],
-  [0, 0, 2, 4, 4, 0],
-  [0, 0, 0, 2, 0, 0],
-  [0, 0, 1, 2, 4, 0]
-]
-
-// output = 19
-
 const hourglassSum = (arr) => {
   let highestSum = -Infinity;
   
@@ -36,5 +25,18 @@ const sumOfOneHourGlass = (arr, row, column) => {
 
   return sumOfRow1 + sumOfRow2 + sumOfRow3;
 }
+
+// -----------------------------------------end of code
+
+const input = [
+  [1, 1, 1, 0, 0, 0],
+  [0, 1, 0, 0, 0, 0],
+  [1, 1, 1, 0, 0, 0],
+  [0, 0, 2, 4, 4, 0],
+  [0, 0, 0, 2, 0, 0],
+  [0, 0, 1, 2, 4, 0]
+]
+
+// Output = 19
   
 console.log(hourglassSum(input))
